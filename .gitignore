@@ -1,0 +1,14 @@
+# Saidas geradas pelo Vivado (recriadas a cada run/simulacao)
+PBL03-Giovanni.cache/
+PBL03-Giovanni.runs/
+PBL03-Giovanni.hw/
+PBL03-Giovanni.sim/
+.Xil/
+*.jou
+*.log
+*.str
+*.wdb
+*.pb
+
+# Saidas do ambiente de verificacao
+verif/build/

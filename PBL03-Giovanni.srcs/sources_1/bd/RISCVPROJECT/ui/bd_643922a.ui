@@ -1,0 +1,285 @@
+{
+   "ActiveEmotionalView":"No Loops",
+   "Addressing View_ScaleFactor":"0.8",
+   "Addressing View_TopLeft":"-209,216",
+   "Clocking and Reset View_ScaleFactor":"0.751377",
+   "Clocking and Reset View_TopLeft":"-763,-592",
+   "Color Coded_Layers":"/clk_0_1:true|/reset_0_1:true|",
+   "Color Coded_ScaleFactor":"0.543594",
+   "Color Coded_TopLeft":"-671,-565",
+   "Default View_Layers":"/reset_0_1:true|/clk_0_1:true|",
+   "Default View_ScaleFactor":"0.940089",
+   "Default View_TopLeft":"-181,-160",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeOthers":"true",
+   "Display-PortTypeReset":"true",
+   "ExpandedHierarchyInLayout":"",
+   "Grouping and No Loops_ExpandedHierarchyInLayout":"",
+   "Grouping and No Loops_Layout":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:24.0
+#  -string -flagsOSRD
+preplace port port-id_clk_0 -pg 1 -lvl 5:w -x 1300 -y 90 -defaultsOSRD -top
+preplace port port-id_reset_0 -pg 1 -lvl 5:w -x 1280 -y 90 -defaultsOSRD -top
+preplace portBus switches_in_0 -pg 1 -lvl 0 -x 0 -y 880 -defaultsOSRD
+preplace inst pc_0 -pg 1 -lvl 5 -x 1160 -y 200 -swap {1 0 2 3} -defaultsOSRD -pinDir clk right -pinY clk 40R -pinDir reset right -pinY reset 20R -pinBusDir PCNext left -pinBusY PCNext 20L -pinBusDir PC right -pinBusY PC 60R
+preplace inst instr_mem_0 -pg 1 -lvl 6 -x 1430 -y 240 -defaultsOSRD -pinBusDir A left -pinBusY A 20L -pinBusDir RD right -pinBusY RD 20R
+preplace inst xlslice_0 -pg 1 -lvl 10 -x 2520 -y 1020 -defaultsOSRD -pinBusDir Din left -pinBusY Din 20L -pinBusDir Dout right -pinBusY Dout 20R
+preplace inst regfile_0 -pg 1 -lvl 11 -x 2800 -y 580 -swap {1 0 3 4 5 2 6 7} -defaultsOSRD -pinDir clk left -pinY clk 40L -pinDir WE3 left -pinY WE3 20L -pinBusDir A1 left -pinBusY A1 460L -pinBusDir A2 left -pinBusY A2 560L -pinBusDir A3 left -pinBusY A3 660L -pinBusDir WD3 left -pinBusY WD3 60L -pinBusDir RD1 right -pinBusY RD1 20R -pinBusDir RD2 right -pinBusY RD2 40R
+preplace inst xlslice_1 -pg 1 -lvl 1 -x 110 -y 500 -swap {1 0} -defaultsOSRD -pinBusDir Din right -pinBusY Din 80R -pinBusDir Dout right -pinBusY Dout 20R
+preplace inst xlslice_2 -pg 1 -lvl 10 -x 2520 -y 1120 -defaultsOSRD -pinBusDir Din left -pinBusY Din 20L -pinBusDir Dout right -pinBusY Dout 20R
+preplace inst alu_0 -pg 1 -lvl 13 -x 3330 -y 240 -swap {0 1 4 2 3} -defaultsOSRD -pinBusDir A left -pinBusY A 20L -pinBusDir B left -pinBusY B 300L -pinBusDir ALUControl left -pinBusY ALUControl 1100L -pinBusDir Result left -pinBusY Result 1060L -pinDir Zero left -pinY Zero 1080L
+preplace inst data_memory_0 -pg 1 -lvl 9 -x 2220 -y 520 -swap {0 1 2 4 3 5 6} -defaultsOSRD -pinDir clk left -pinY clk 20L -pinDir WE left -pinY WE 220L -pinBusDir funct3 left -pinBusY funct3 340L -pinBusDir A right -pinBusY A 340R -pinBusDir WD right -pinBusY WD 20R -pinBusDir switches_in left -pinBusY switches_in 360L -pinBusDir RD right -pinBusY RD 360R
+preplace inst xlslice_3 -pg 1 -lvl 10 -x 2520 -y 1220 -defaultsOSRD -pinBusDir Din left -pinBusY Din 20L -pinBusDir Dout right -pinBusY Dout 20R
+preplace inst mux_alu_src_0 -pg 1 -lvl 12 -x 3090 -y 340 -swap {2 0 1 3} -defaultsOSRD -pinBusDir RD2 left -pinBusY RD2 200L -pinBusDir ImmExt left -pinBusY ImmExt 20L -pinDir ALUSrc left -pinY ALUSrc 80L -pinBusDir SrcB right -pinBusY SrcB 200R
+preplace inst pc_plus4_0 -pg 1 -lvl 3 -x 600 -y 620 -swap {1 0} -defaultsOSRD -pinBusDir PC right -pinBusY PC 40R -pinBusDir PCPlus4 right -pinBusY PCPlus4 20R
+preplace inst pc_target_0 -pg 1 -lvl 3 -x 600 -y 220 -swap {4 1 2 3 0} -defaultsOSRD -pinBusDir PC right -pinBusY PC 240R -pinBusDir ImmExt left -pinBusY ImmExt 240L -pinBusDir RD1 right -pinBusY RD1 120R -pinDir IsJalr right -pinY IsJalr 220R -pinBusDir PCTarget right -pinBusY PCTarget 20R
+preplace inst mux_pc_0 -pg 1 -lvl 4 -x 900 -y 140 -swap {1 0 2 3} -defaultsOSRD -pinBusDir PCPlus4 left -pinBusY PCPlus4 120L -pinBusDir PCTarget left -pinBusY PCTarget 100L -pinDir PCSrc right -pinY PCSrc 20R -pinBusDir PCNext right -pinBusY PCNext 80R
+preplace inst decoder_control_0 -pg 1 -lvl 8 -x 1900 -y 400 -swap {5 10 11 9 4 2 3 6 7 8 0 1 12} -defaultsOSRD -pinBusDir opcode left -pinBusY opcode 200L -pinBusDir funct3 left -pinBusY funct3 300L -pinDir funct7b5 left -pinY funct7b5 400L -pinDir Zero right -pinY Zero 380R -pinDir RegWrite right -pinY RegWrite 40R -pinBusDir ImmSrc left -pinBusY ImmSrc 120L -pinDir ALUSrc right -pinY ALUSrc 20R -pinBusDir ALUASrc right -pinBusY ALUASrc 60R -pinDir MemWrite right -pinY MemWrite 340R -pinBusDir ResultSrc right -pinBusY ResultSrc 360R -pinDir PCSrc left -pinY PCSrc 20L -pinDir IsJalr left -pinY IsJalr 40L -pinBusDir ALUControl right -pinBusY ALUControl 400R
+preplace inst sliceopcode -pg 1 -lvl 7 -x 1640 -y 580 -defaultsOSRD -pinBusDir Din left -pinBusY Din 20L -pinBusDir Dout right -pinBusY Dout 20R
+preplace inst funct3 -pg 1 -lvl 7 -x 1640 -y 680 -defaultsOSRD -pinBusDir Din left -pinBusY Din 20L -pinBusDir Dout right -pinBusY Dout 20R
+preplace inst funct7b5 -pg 1 -lvl 7 -x 1640 -y 780 -defaultsOSRD -pinBusDir Din left -pinBusY Din 20L -pinBusDir Dout right -pinBusY Dout 20R
+preplace inst immediate_extended_0 -pg 1 -lvl 2 -x 330 -y 480 -swap {0 2 1} -defaultsOSRD -pinBusDir Instr left -pinBusY Instr 40L -pinBusDir ImmSrc right -pinBusY ImmSrc 40R -pinBusDir ImmExt right -pinBusY ImmExt 20R
+preplace inst write2_0 -pg 1 -lvl 10 -x 2520 -y 580 -swap {1 2 0 3 4} -defaultsOSRD -pinBusDir ALUResult left -pinBusY ALUResult 280L -pinBusDir ReadData left -pinBusY ReadData 300L -pinBusDir PCPlus4 left -pinBusY PCPlus4 20L -pinBusDir ResultSrc left -pinBusY ResultSrc 360L -pinBusDir Result right -pinBusY Result 60R
+preplace inst mux_alu_a_0 -pg 1 -lvl 12 -x 3090 -y 180 -swap {1 0 2 3} -defaultsOSRD -pinBusDir RD1 left -pinBusY RD1 60L -pinBusDir PC left -pinBusY PC 20L -pinBusDir ALUASrc left -pinBusY ALUASrc 80L -pinBusDir SrcA right -pinBusY SrcA 80R
+preplace netloc alu_0_Result 1 9 4 2380 1300 NJ 1300 NJ 1300 N
+preplace netloc alu_0_Zero 1 8 5 2060J 1320 NJ 1320 NJ 1320 NJ 1320 N
+preplace netloc clk_0_1 1 5 6 1300 180 NJ 180 NJ 180 2080 480 NJ 480 2660
+preplace netloc data_memory_0_RD 1 9 1 N 880
+preplace netloc decoder_control_0_ALUASrc 1 8 4 NJ 460 NJ 460 NJ 460 2960
+preplace netloc decoder_control_0_ALUControl 1 8 5 2040J 1340 NJ 1340 NJ 1340 NJ 1340 N
+preplace netloc decoder_control_0_ALUSrc 1 8 4 N 420 NJ 420 NJ 420 NJ
+preplace netloc decoder_control_0_ImmSrc 1 2 6 NJ 520 NJ 520 NJ 520 NJ 520 NJ 520 N
+preplace netloc decoder_control_0_IsJalr 1 3 5 NJ 440 NJ 440 NJ 440 NJ 440 N
+preplace netloc decoder_control_0_MemWrite 1 8 1 N 740
+preplace netloc decoder_control_0_PCSrc 1 4 4 NJ 160 NJ 160 NJ 160 1740
+preplace netloc decoder_control_0_RegWrite 1 8 3 NJ 440 NJ 440 2680
+preplace netloc decoder_control_0_ResultSrc 1 8 2 2080J 940 N
+preplace netloc funct3_Dout 1 7 2 1740 860 NJ
+preplace netloc funct7b5_Dout 1 7 1 NJ 800
+preplace netloc immediate_extended_0_ImmExt 1 2 10 460 540 NJ 540 NJ 540 NJ 540 NJ 540 1760J 360 NJ 360 NJ 360 NJ 360 N
+preplace netloc instr_mem_0_RD 1 1 9 NJ 580 NJ 580 NJ 580 NJ 580 NJ 580 1540 960 NJ 960 NJ 960 2360
+preplace netloc mux_alu_a_0_SrcA 1 12 1 N 260
+preplace netloc mux_alu_src_0_SrcB 1 12 1 N 540
+preplace netloc mux_pc_0_PCNext 1 4 1 N 220
+preplace netloc pc_0_PC 1 3 9 740 600 NJ 600 1320 200 NJ 200 NJ 200 NJ 200 NJ 200 NJ 200 N
+preplace netloc pc_plus4_0_PCPlus4 1 3 7 760 320 NJ 320 NJ 320 NJ 320 NJ 320 NJ 320 2380
+preplace netloc pc_target_0_PCTarget 1 3 1 N 240
+preplace netloc regfile_0_RD1 1 3 9 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 2940
+preplace netloc regfile_0_RD2 1 9 3 NJ 540 NJ 540 2920
+preplace netloc reset_0_1 1 5 1 1280 90n
+preplace netloc sliceopcode_Dout 1 7 1 NJ 600
+preplace netloc switches_in_0_1 1 0 9 NJ 880 NJ 880 NJ 880 NJ 880 NJ 880 NJ 880 NJ 880 NJ 880 NJ
+preplace netloc write2_0_Result 1 10 1 N 640
+preplace netloc xlslice_0_Dout 1 10 1 NJ 1040
+preplace netloc xlslice_1_Dout 1 1 1 N 520
+preplace netloc xlslice_2_Dout 1 10 1 NJ 1140
+preplace netloc xlslice_3_Dout 1 10 1 NJ 1240
+levelinfo -pg 1 0 110 330 600 900 1160 1430 1640 1900 2220 2520 2800 3090 3330 3430
+pagesize -pg 1 -db -bbox -sgen -170 0 3430 1400
+",
+   "Grouping and No Loops_ScaleFactor":"1.14902",
+   "Grouping and No Loops_TopLeft":"60,220",
+   "Interfaces View_Layers":"/reset_0_1:false|/clk_0_1:false|",
+   "Interfaces View_ScaleFactor":"1.25",
+   "Interfaces View_TopLeft":"106,-345",
+   "Interrupt and AXI-4 Lite_Layers":"/clk_0_1:false|/reset_0_1:false|",
+   "Interrupt and AXI-4 Lite_ScaleFactor":"0.8",
+   "Interrupt and AXI-4 Lite_TopLeft":"-789,226",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layers":"/reset_0_1:true|/clk_0_1:true|",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:24.0
+#  -string -flagsOSRD
+preplace port port-id_clk_0 -pg 1 -lvl 0:w -x -1720 -y 790 -defaultsOSRD
+preplace port port-id_reset_0 -pg 1 -lvl 0:w -x -1720 -y 700 -defaultsOSRD
+preplace portBus switches_in_0 -pg 1 -lvl 4 -x 400 -y -600 -defaultsOSRD -top
+preplace portBus dpad_in_0 -pg 1 -lvl 3 -x -60 -y -600 -defaultsOSRD -top
+preplace portBus led1_out_0 -pg 1 -lvl 4 -x 360 -y -600 -defaultsOSRD -top
+preplace portBus led0_out_0 -pg 1 -lvl 4 -x 270 -y -600 -defaultsOSRD -top
+preplace portBus led3_out_0 -pg 1 -lvl 4 -x 430 -y -600 -defaultsOSRD -top
+preplace portBus led2_out_0 -pg 1 -lvl 4 -x 330 -y -600 -defaultsOSRD -top
+preplace inst pc_0 -pg 1 -lvl 1 -x -1280 -y -10 -swap {2 1 0 3} -defaultsOSRD -pinDir clk left -pinY clk 60L -pinDir reset left -pinY reset 40L -pinBusDir PCNext left -pinBusY PCNext 0L -pinBusDir PC right -pinBusY PC 60R
+preplace inst instr_mem_0 -pg 1 -lvl 1 -x -1280 -y 750 -defaultsOSRD -pinBusDir A right -pinBusY A 20R -pinBusDir RD right -pinBusY RD 40R
+preplace inst xlslice_0 -pg 1 -lvl 2 -x -820 -y 780 -defaultsOSRD -pinBusDir Din left -pinBusY Din 20L -pinBusDir Dout right -pinBusY Dout 20R
+preplace inst regfile_0 -pg 1 -lvl 3 -x -200 -y 570 -swap {2 1 5 4 6 7 3 0} -defaultsOSRD -pinDir clk left -pinY clk 40L -pinDir WE3 right -pinY WE3 20R -pinBusDir A1 left -pinBusY A1 100L -pinBusDir A2 left -pinBusY A2 80L -pinBusDir A3 left -pinBusY A3 120L -pinBusDir WD3 left -pinBusY WD3 140L -pinBusDir RD1 left -pinBusY RD1 60L -pinBusDir RD2 left -pinBusY RD2 20L
+preplace inst xlslice_1 -pg 1 -lvl 2 -x -820 -y 130 -defaultsOSRD -pinBusDir Din left -pinBusY Din 20L -pinBusDir Dout right -pinBusY Dout 20R
+preplace inst xlslice_2 -pg 1 -lvl 2 -x -820 -y 660 -defaultsOSRD -pinBusDir Din left -pinBusY Din 20L -pinBusDir Dout right -pinBusY Dout 20R
+preplace inst alu_0 -pg 1 -lvl 4 -x 340 -y 440 -swap {6 1 3 0 2 4 5} -defaultsOSRD -pinBusDir A left -pinBusY A 140L -pinBusDir B left -pinBusY B 40L -pinBusDir ALUControl left -pinBusY ALUControl 80L -pinBusDir Result left -pinBusY Result 20L -pinDir Zero left -pinY Zero 60L -pinDir LessSigned left -pinY LessSigned 100L -pinDir LessUnsigned left -pinY LessUnsigned 120L
+preplace inst data_memory_0 -pg 1 -lvl 3 -x -200 -y -80 -swap {0 4 1 3 7 10 5 2 6 9 8 11} -defaultsOSRD -pinDir clk left -pinY clk 20L -pinDir WE left -pinY WE 100L -pinBusDir funct3 left -pinBusY funct3 40L -pinBusDir A left -pinBusY A 80L -pinBusDir WD left -pinBusY WD 120L -pinBusDir switches_in right -pinBusY switches_in 100R -pinBusDir dpad_in right -pinBusY dpad_in 20R -pinBusDir RD left -pinBusY RD 60L -pinBusDir led0_out right -pinBusY led0_out 40R -pinBusDir led1_out right -pinBusY led1_out 80R -pinBusDir led2_out right -pinBusY led2_out 60R -pinBusDir led3_out right -pinBusY led3_out 120R
+preplace inst xlslice_3 -pg 1 -lvl 2 -x -820 -y 890 -defaultsOSRD -pinBusDir Din left -pinBusY Din 20L -pinBusDir Dout right -pinBusY Dout 20R
+preplace inst mux_alu_src_0 -pg 1 -lvl 3 -x -200 -y 290 -swap {1 0 3 2} -defaultsOSRD -pinBusDir RD2 left -pinBusY RD2 40L -pinBusDir ImmExt left -pinBusY ImmExt 20L -pinDir ALUSrc right -pinY ALUSrc 40R -pinBusDir SrcB right -pinBusY SrcB 20R
+preplace inst pc_plus4_0 -pg 1 -lvl 1 -x -1280 -y 620 -defaultsOSRD -pinBusDir PC right -pinBusY PC 20R -pinBusDir PCPlus4 right -pinBusY PCPlus4 40R
+preplace inst pc_target_0 -pg 1 -lvl 1 -x -1280 -y 190 -swap {3 1 2 0 4} -defaultsOSRD -pinBusDir PC right -pinBusY PC 80R -pinBusDir ImmExt right -pinBusY ImmExt 40R -pinBusDir RD1 right -pinBusY RD1 60R -pinDir IsJalr right -pinY IsJalr 20R -pinBusDir PCTarget left -pinBusY PCTarget 20L
+preplace inst mux_pc_0 -pg 1 -lvl 1 -x -1280 -y 420 -swap {3 1 2 0} -defaultsOSRD -pinBusDir PCPlus4 right -pinBusY PCPlus4 60R -pinBusDir PCTarget left -pinBusY PCTarget 20L -pinDir PCSrc right -pinY PCSrc 40R -pinBusDir PCNext right -pinBusY PCNext 20R
+preplace inst decoder_control_0 -pg 1 -lvl 3 -x -200 -y 830 -swap {2 11 10 5 7 8 3 9 4 14 0 13 12 1 6} -defaultsOSRD -pinBusDir opcode left -pinBusY opcode 60L -pinBusDir funct3 left -pinBusY funct3 100L -pinDir funct7b5 left -pinY funct7b5 80L -pinDir Zero right -pinY Zero 60R -pinDir LessSigned right -pinY LessSigned 100R -pinDir LessUnsigned right -pinY LessUnsigned 120R -pinDir RegWrite right -pinY RegWrite 20R -pinBusDir ImmSrc right -pinBusY ImmSrc 140R -pinDir ALUSrc right -pinY ALUSrc 40R -pinBusDir ALUASrc right -pinBusY ALUASrc 160R -pinDir MemWrite left -pinY MemWrite 20L -pinBusDir ResultSrc left -pinBusY ResultSrc 140L -pinDir PCSrc left -pinY PCSrc 120L -pinDir IsJalr left -pinY IsJalr 40L -pinBusDir ALUControl right -pinBusY ALUControl 80R
+preplace inst sliceopcode -pg 1 -lvl 2 -x -820 -y 310 -defaultsOSRD -pinBusDir Din left -pinBusY Din 20L -pinBusDir Dout right -pinBusY Dout 20R
+preplace inst funct3 -pg 1 -lvl 2 -x -820 -y 540 -defaultsOSRD -pinBusDir Din left -pinBusY Din 20L -pinBusDir Dout right -pinBusY Dout 20R
+preplace inst funct7b5 -pg 1 -lvl 2 -x -820 -y 420 -defaultsOSRD -pinBusDir Din left -pinBusY Din 20L -pinBusDir Dout right -pinBusY Dout 20R
+preplace inst immediate_extended_0 -pg 1 -lvl 4 -x 340 -y 730 -swap {0 2 1} -defaultsOSRD -pinBusDir Instr left -pinBusY Instr 20L -pinBusDir ImmSrc left -pinBusY ImmSrc 60L -pinBusDir ImmExt left -pinBusY ImmExt 40L
+preplace inst write2_0 -pg 1 -lvl 2 -x -820 -y 1020 -swap {1 0 2 4 3} -defaultsOSRD -pinBusDir ALUResult right -pinBusY ALUResult 40R -pinBusDir ReadData right -pinBusY ReadData 20R -pinBusDir PCPlus4 left -pinBusY PCPlus4 20L -pinBusDir ResultSrc right -pinBusY ResultSrc 80R -pinBusDir Result right -pinBusY Result 60R
+preplace inst mux_alu_a_0 -pg 1 -lvl 3 -x -200 -y 1130 -defaultsOSRD -pinBusDir RD1 left -pinBusY RD1 20L -pinBusDir PC left -pinBusY PC 40L -pinBusDir ALUASrc right -pinBusY ALUASrc 20R -pinBusDir SrcA right -pinBusY SrcA 40R
+preplace netloc alu_0_LessSigned 1 3 1 90J 540n
+preplace netloc alu_0_LessUnsigned 1 3 1 130J 560n
+preplace netloc alu_0_Result 1 2 2 -480 210 150J
+preplace netloc alu_0_Zero 1 3 1 30J 500n
+preplace netloc clk_0_1 1 0 3 -1460 -90 -1040J 70 -400
+preplace netloc data_memory_0_RD 1 2 1 -580J -20n
+preplace netloc data_memory_0_led0_out 1 3 1 150 -590n
+preplace netloc data_memory_0_led1_out 1 3 1 90 -550n
+preplace netloc data_memory_0_led2_out 1 3 1 110 -570n
+preplace netloc data_memory_0_led3_out 1 3 1 -10 -510n
+preplace netloc decoder_control_0_ALUASrc 1 3 1 -10 990n
+preplace netloc decoder_control_0_ALUControl 1 3 1 50J 520n
+preplace netloc decoder_control_0_ALUSrc 1 3 1 10 330n
+preplace netloc decoder_control_0_ImmSrc 1 3 1 170J 790n
+preplace netloc decoder_control_0_IsJalr 1 1 2 NJ 210 -520J
+preplace netloc decoder_control_0_MemWrite 1 2 1 -360 20n
+preplace netloc decoder_control_0_PCSrc 1 1 2 -1120J 620 -660J
+preplace netloc decoder_control_0_RegWrite 1 3 1 -30 590n
+preplace netloc decoder_control_0_ResultSrc 1 2 1 -340J 970n
+preplace netloc dpad_in_0_1 1 3 1 -30 -590n
+preplace netloc funct3_Dout 1 2 1 -420 -40n
+preplace netloc funct7b5_Dout 1 2 1 -500 440n
+preplace netloc immediate_extended_0_ImmExt 1 1 3 -1060J 250 -380J 230 70J
+preplace netloc instr_mem_0_RD 1 1 1 -960 150n
+preplace netloc mux_alu_a_0_SrcA 1 3 1 150 580n
+preplace netloc mux_alu_src_0_SrcB 1 3 1 90J 310n
+preplace netloc mux_pc_0_PCNext 1 0 2 -1420 -70 -1140
+preplace netloc pc_0_PC 1 1 2 -1100 740 -680
+preplace netloc pc_plus4_0_PCPlus4 1 1 1 -1140 480n
+preplace netloc pc_target_0_PCTarget 1 0 1 -1420 210n
+preplace netloc regfile_0_RD1 1 1 2 -1080J 270 -600J
+preplace netloc regfile_0_RD2 1 2 1 -340 40n
+preplace netloc reset_0_1 1 0 1 -1440 30n
+preplace netloc sliceopcode_Dout 1 2 1 -440 330n
+preplace netloc switches_in_0_1 1 3 1 10 -530n
+preplace netloc write2_0_Result 1 2 1 -380 710n
+preplace netloc xlslice_0_Dout 1 2 1 -460 670n
+preplace netloc xlslice_1_Dout 1 2 2 -380J 170 110J
+preplace netloc xlslice_2_Dout 1 2 1 -560 650n
+preplace netloc xlslice_3_Dout 1 2 1 -540 690n
+levelinfo -pg 1 -1720 -1280 -820 -200 340 570
+pagesize -pg 1 -db -bbox -sgen -1820 -770 3710 1800
+",
+   "No Loops_PinnedBlocks":"/pc_0|/instr_mem_0|/xlslice_0|/regfile_0|/xlslice_1|/xlslice_2|/alu_0|/data_memory_0|/xlslice_3|/mux_alu_src_0|/pc_plus4_0|/pc_target_0|/mux_pc_0|/decoder_control_0|/sliceopcode|/funct3|/funct7b5|/immediate_extended_0|/write2_0|/mux_alu_a_0|",
+   "No Loops_PinnedPorts":"clk_0|reset_0|switches_in_0|dpad_in_0|led1_out_0|led0_out_0|led3_out_0|led2_out_0|",
+   "No Loops_ScaleFactor":"0.385392",
+   "No Loops_TopLeft":"-2846,-612",
+   "Reduced Jogs_ExpandedHierarchyInLayout":"",
+   "Reduced Jogs_Layout":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:24.0
+#  -string -flagsOSRD
+preplace port port-id_clk_0 -pg 1 -lvl 0:w -x -840 -y -70 -defaultsOSRD -top
+preplace port port-id_reset_0 -pg 1 -lvl 0:w -x -1470 -y -70 -defaultsOSRD -top
+preplace port port-id_clk_1 -pg 1 -lvl 3 -x -120 -y 1480 -defaultsOSRD -bot
+preplace inst pc_0 -pg 1 -lvl 1 -x -700 -y 560 -swap {1 2 0 3} -defaultsOSRD -pinY clk 20L -pinY reset 40L -pinBusY PCNext 0L -pinBusY PC 20R
+preplace inst instr_mem_0 -pg 1 -lvl 2 -x -420 -y 580 -defaultsOSRD -pinBusY A 0L -pinBusY RD 0R
+preplace inst xlslice_0 -pg 1 -lvl 3 -x -100 -y 430 -defaultsOSRD -pinBusY Din 20L -pinBusY Dout 20R
+preplace inst regfile_0 -pg 1 -lvl 4 -x 340 -y 490 -swap {3 0 4 5 1 2 6 7} -defaultsOSRD -pinY clk 120L -pinY WE3 0L -pinBusY A1 140L -pinBusY A2 160L -pinBusY A3 20L -pinBusY WD3 40L -pinBusY RD1 60R -pinBusY RD2 120R
+preplace inst xlslice_1 -pg 1 -lvl 3 -x -100 -y 700 -defaultsOSRD -pinBusY Din 0L -pinBusY Dout 100R
+preplace inst xlslice_2 -pg 1 -lvl 3 -x -100 -y 550 -defaultsOSRD -pinBusY Din 20L -pinBusY Dout 20R
+preplace inst alu_0 -pg 1 -lvl 6 -x 1000 -y 570 -defaultsOSRD -pinBusY A 20L -pinBusY B 40L -pinBusY ALUControl 60L -pinBusY Result 20R -pinY Zero 60R
+preplace inst data_memory_0 -pg 1 -lvl 10 -x 2530 -y 400 -swap {0 3 1 2 4} -defaultsOSRD -pinY clk 20L -pinY WE 80L -pinBusY A 40L -pinBusY WD 60L -pinBusY RD 40R
+preplace inst xlslice_3 -pg 1 -lvl 9 -x 2140 -y 710 -defaultsOSRD -pinBusY Din 20L -pinBusY Dout 20R
+preplace inst mux_alu_src_0 -pg 1 -lvl 5 -x 650 -y 560 -swap {1 0 2 3} -defaultsOSRD -pinBusY RD2 40L -pinBusY ImmExt 20L -pinY ALUSrc 60L -pinBusY SrcB 20R
+preplace inst pc_plus4_0 -pg 1 -lvl 2 -x -420 -y 800 -defaultsOSRD -pinBusY PC 20L -pinBusY PCPlus4 20R
+preplace inst pc_target_0 -pg 1 -lvl 2 -x -420 -y 680 -swap {1 0 2} -defaultsOSRD -pinBusY PC 20L -pinBusY ImmExt 0L -pinBusY PCTarget 40R
+preplace inst mux_pc_0 -pg 1 -lvl 9 -x 2140 -y 810 -swap {1 2 0 3} -defaultsOSRD -pinBusY PCPlus4 40L -pinBusY PCTarget 60L -pinY PCSrc 20L -pinBusY PCNext 20R
+preplace inst decoder_control_0 -pg 1 -lvl 9 -x 2140 -y 970 -swap {2 3 0 1 6 7 10 9 5 8 4} -defaultsOSRD -pinBusY opcode 60L -pinBusY funct3 80L -pinY funct7b5 20L -pinY Zero 40L -pinY RegWrite 60R -pinBusY ImmSrc 80R -pinY ALUSrc 140R -pinY MemWrite 120R -pinBusY ResultSrc 40R -pinY PCSrc 100R -pinBusY ALUControl 20R
+preplace inst sliceopcode -pg 1 -lvl 8 -x 1700 -y 700 -defaultsOSRD -pinBusY Din 20L -pinBusY Dout 20R
+preplace inst funct3 -pg 1 -lvl 8 -x 1700 -y 800 -defaultsOSRD -pinBusY Din 20L -pinBusY Dout 20R
+preplace inst funct7b5 -pg 1 -lvl 8 -x 1700 -y 500 -defaultsOSRD -pinBusY Din 20L -pinBusY Dout 20R
+preplace inst immediate_extended_0 -pg 1 -lvl 9 -x 2140 -y 460 -swap {1 0 2} -defaultsOSRD -pinBusY Instr 40L -pinBusY ImmSrc 20L -pinBusY ImmExt 20R
+preplace inst write2_0 -pg 1 -lvl 7 -x 1380 -y 580 -swap {2 0 1 3 4} -defaultsOSRD -pinBusY ALUResult 60L -pinBusY ReadData 20L -pinBusY PCPlus4 40L -pinBusY ResultSrc 80L -pinBusY Result 20R
+preplace inst xlslice_4 -pg 1 -lvl 3 -x -100 -y 1060 -defaultsOSRD -pinBusY Din 20L -pinBusY Dout 20R
+preplace inst sliceopcode1 -pg 1 -lvl 3 -x -100 -y 1180 -defaultsOSRD -pinBusY Din 20L -pinBusY Dout 20R
+preplace inst alu_1 -pg 1 -lvl 3 -x -100 -y 1350 -defaultsOSRD -pinBusY A 20L -pinBusY B 40L -pinBusY ALUControl 60L -pinBusY Result 20R -pinY Zero 40R
+preplace netloc alu_0_Result 1 6 4 1220 360 1540 380 N 380 2400
+preplace netloc alu_0_Zero 1 6 3 1140 720 1520 630 1840
+preplace netloc clk_0_1 1 0 10 -840J 360 N 360 N 360 160J 370 460 240 N 240 N 240 N 240 NJ 240 2420
+preplace netloc data_memory_0_RD 1 6 5 1240 380 1560 360 N 360 NJ 360 2640
+preplace netloc decoder_control_0_ALUControl 1 5 5 860 930 N 930 N 930 N 930 2280J
+preplace netloc decoder_control_0_ALUSrc 1 4 6 520 1110 N 1110 N 1110 N 1110 1800 1170 2300J
+preplace netloc decoder_control_0_ImmSrc 1 8 2 2000 400 2360
+preplace netloc decoder_control_0_MemWrite 1 9 1 2420J 480n
+preplace netloc decoder_control_0_PCSrc 1 8 2 1980J 290 2380
+preplace netloc decoder_control_0_RegWrite 1 3 7 220 390 N 390 800 360 1200 400 N 400 1960 420 2340
+preplace netloc decoder_control_0_ResultSrc 1 6 4 1240 740 1600 660 N 660 2320
+preplace netloc funct3_Dout 1 8 1 1800 820n
+preplace netloc funct7b5_Dout 1 8 1 1860 520n
+preplace netloc immediate_extended_0_ImmExt 1 1 9 -560 210 N 210 80J 260 480 260 N 260 N 260 N 260 1900J 210 2280J
+preplace netloc instr_mem_0_RD 1 2 7 -280 -10 80 -30 N -30 N -30 N -30 1580 -30 1940
+preplace netloc mux_alu_src_0_SrcB 1 5 1 780 580n
+preplace netloc mux_pc_0_PCNext 1 0 10 -820 380 N 380 N 380 80J 1090 N 1090 N 1090 N 1090 N 1090 2000 1190 2400
+preplace netloc pc_0_PC 1 1 1 -580 580n
+preplace netloc pc_plus4_0_PCPlus4 1 2 7 -260 510 120 410 N 410 820 380 1160 420 N 420 1900
+preplace netloc pc_target_0_PCTarget 1 2 7 -240 630 40 710 460 870 780 880 N 880 N 880 2000
+preplace netloc regfile_0_RD1 1 4 2 520 520 860
+preplace netloc regfile_0_RD2 1 4 6 500 460 860 420 1140 460 N 460 1880J 560 2400
+preplace netloc reset_0_1 1 0 1 -1470J -70n
+preplace netloc sliceopcode_Dout 1 8 1 1820 720n
+preplace netloc write2_0_Result 1 3 5 180 -50 N -50 N -50 N -50 1520
+preplace netloc xlslice_0_Dout 1 3 1 100 450n
+preplace netloc xlslice_1_Dout 1 3 6 140 430 N 430 840 400 1180 440 N 440 1920
+preplace netloc xlslice_2_Dout 1 3 1 60 570n
+preplace netloc xlslice_3_Dout 1 3 7 200 350 N 350 780 340 N 340 N 340 N 340 2300
+levelinfo -pg 1 -1490 -700 -420 -100 340 650 1000 1380 1700 2140 2530 2970
+pagesize -pg 1 -db -bbox -sgen -1590 -160 3100 1560
+",
+   "Reduced Jogs_ScaleFactor":"0.425703",
+   "Reduced Jogs_TopLeft":"-169,-460",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:24.0
+#  -string -flagsOSRD
+preplace port port-id_clk_0 -pg 1 -lvl 0 -x 0 -y 520 -defaultsOSRD
+preplace port port-id_reset_0 -pg 1 -lvl 0 -x 0 -y 600 -defaultsOSRD
+preplace inst pc_0 -pg 1 -lvl 5 -x 1190 -y 600 -defaultsOSRD
+preplace inst instr_mem_0 -pg 1 -lvl 6 -x 1420 -y 580 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 10 -x 2460 -y 550 -defaultsOSRD
+preplace inst regfile_0 -pg 1 -lvl 11 -x 2770 -y 560 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 1 -x 120 -y 60 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 10 -x 2460 -y 650 -defaultsOSRD
+preplace inst alu_0 -pg 1 -lvl 12 -x 3060 -y 890 -swap {0 1 2 4 3} -defaultsOSRD
+preplace inst data_memory_0 -pg 1 -lvl 9 -x 2180 -y 380 -swap {0 2 3 1 4} -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 10 -x 2460 -y 750 -defaultsOSRD
+preplace inst mux_alu_src_0 -pg 1 -lvl 11 -x 2770 -y 260 -defaultsOSRD
+preplace inst pc_plus4_0 -pg 1 -lvl 3 -x 630 -y 270 -defaultsOSRD
+preplace inst pc_target_0 -pg 1 -lvl 3 -x 630 -y 400 -defaultsOSRD
+preplace inst mux_pc_0 -pg 1 -lvl 4 -x 920 -y 400 -defaultsOSRD
+preplace inst decoder_control_0 -pg 1 -lvl 8 -x 1880 -y 350 -defaultsOSRD
+preplace inst sliceopcode -pg 1 -lvl 7 -x 1630 -y 240 -defaultsOSRD
+preplace inst funct3 -pg 1 -lvl 7 -x 1630 -y 340 -defaultsOSRD
+preplace inst funct7b5 -pg 1 -lvl 7 -x 1630 -y 440 -defaultsOSRD
+preplace inst immediate_extended_0 -pg 1 -lvl 2 -x 350 -y 70 -defaultsOSRD
+preplace inst write2_0 -pg 1 -lvl 10 -x 2460 -y 140 -defaultsOSRD
+preplace inst xlslice_4 -pg 1 -lvl 6 -x 1420 -y 690 -defaultsOSRD -resize 160 88
+preplace netloc alu_0_Result 1 8 5 2060 480 2300 970 NJ 970 NJ 970 3200
+preplace netloc alu_0_Zero 1 7 6 1740 810 NJ 810 NJ 810 NJ 810 NJ 810 3200
+preplace netloc clk_0_1 1 0 11 NJ 520 NJ 520 NJ 520 NJ 520 1070 520 NJ 520 NJ 520 NJ 520 2050 490 NJ 490 2600J
+preplace netloc data_memory_0_RD 1 9 1 2310 130n
+preplace netloc decoder_control_0_ALUControl 1 8 4 2030 910 NJ 910 NJ 910 NJ
+preplace netloc decoder_control_0_ALUSrc 1 8 3 2070J 280 NJ 280 N
+preplace netloc decoder_control_0_ImmSrc 1 1 8 220 140 NJ 140 NJ 140 NJ 140 NJ 140 NJ 140 NJ 140 2020
+preplace netloc decoder_control_0_MemWrite 1 8 1 2040 350n
+preplace netloc decoder_control_0_PCSrc 1 3 6 780 500 NJ 500 NJ 500 NJ 500 NJ 500 2020
+preplace netloc decoder_control_0_RegWrite 1 8 3 NJ 290 NJ 290 2610
+preplace netloc decoder_control_0_ResultSrc 1 8 2 2030 170 NJ
+preplace netloc funct3_Dout 1 7 1 NJ 340
+preplace netloc funct7b5_Dout 1 7 1 1730J 360n
+preplace netloc immediate_extended_0_ImmExt 1 2 9 480 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ 180 2320J 260 N
+preplace netloc instr_mem_0_RD 1 0 10 20 490 NJ 490 NJ 490 NJ 490 NJ 490 NJ 490 1530 510 NJ 510 NJ 510 2290
+preplace netloc mux_alu_src_0_SrcB 1 11 1 2920 260n
+preplace netloc mux_pc_0_PCNext 1 4 1 1060 400n
+preplace netloc pc_0_PC 1 2 4 490 330 770J 480 NJ 480 1310
+preplace netloc pc_plus4_0_PCPlus4 1 3 7 780 150 NJ 150 NJ 150 NJ 150 NJ 150 NJ 150 NJ
+preplace netloc pc_target_0_PCTarget 1 3 1 N 400
+preplace netloc regfile_0_RD1 1 11 1 2910 550n
+preplace netloc regfile_0_RD2 1 8 4 2070 470 NJ 470 2630 670 2900
+preplace netloc reset_0_1 1 0 5 NJ 600 NJ 600 NJ 600 NJ 600 NJ
+preplace netloc sliceopcode_Dout 1 7 1 1730J 240n
+preplace netloc write2_0_Result 1 10 1 2620 140n
+preplace netloc xlslice_0_Dout 1 10 1 NJ 550
+preplace netloc xlslice_1_Dout 1 1 1 NJ 60
+preplace netloc xlslice_2_Dout 1 10 1 2600J 570n
+preplace netloc xlslice_3_Dout 1 10 1 2640J 590n
+levelinfo -pg 1 0 120 350 630 920 1190 1420 1630 1880 2180 2460 2770 3060 3220
+pagesize -pg 1 -db -bbox -sgen -100 0 3220 980
+"
+}
+0

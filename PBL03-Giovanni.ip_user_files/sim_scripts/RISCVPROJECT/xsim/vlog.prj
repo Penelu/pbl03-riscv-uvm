@@ -1,0 +1,45 @@
+sv xil_defaultlib -i "../../../../../../tools/Xilinks/2026.1/data/rsb/busdef" \
+"../../../bd/RISCVPROJECT/ip/RISCVPROJECT_pc_0_0/sim/RISCVPROJECT_pc_0_0.sv" \
+"../../../bd/RISCVPROJECT/ip/RISCVPROJECT_instr_mem_0_0/sim/RISCVPROJECT_instr_mem_0_0.sv" \
+
+verilog xil_defaultlib -i "../../../../../../tools/Xilinks/2026.1/data/rsb/busdef" \
+"../../../bd/RISCVPROJECT/ip/RISCVPROJECT_xlslice_0_0/sim/RISCVPROJECT_xlslice_0_0.v" \
+
+sv xil_defaultlib -i "../../../../../../tools/Xilinks/2026.1/data/rsb/busdef" \
+"../../../bd/RISCVPROJECT/ip/RISCVPROJECT_regfile_0_0/sim/RISCVPROJECT_regfile_0_0.sv" \
+
+verilog xil_defaultlib -i "../../../../../../tools/Xilinks/2026.1/data/rsb/busdef" \
+"../../../bd/RISCVPROJECT/ip/RISCVPROJECT_xlslice_0_1/sim/RISCVPROJECT_xlslice_0_1.v" \
+"../../../bd/RISCVPROJECT/ip/RISCVPROJECT_xlslice_0_2/sim/RISCVPROJECT_xlslice_0_2.v" \
+
+sv xil_defaultlib -i "../../../../../../tools/Xilinks/2026.1/data/rsb/busdef" \
+"../../../bd/RISCVPROJECT/ip/RISCVPROJECT_alu_0_0/sim/RISCVPROJECT_alu_0_0.sv" \
+"../../../bd/RISCVPROJECT/ip/RISCVPROJECT_data_memory_0_0/sim/RISCVPROJECT_data_memory_0_0.sv" \
+
+verilog xil_defaultlib -i "../../../../../../tools/Xilinks/2026.1/data/rsb/busdef" \
+"../../../bd/RISCVPROJECT/ip/RISCVPROJECT_xlslice_3_0/sim/RISCVPROJECT_xlslice_3_0.v" \
+
+sv xil_defaultlib -i "../../../../../../tools/Xilinks/2026.1/data/rsb/busdef" \
+"../../../bd/RISCVPROJECT/ip/RISCVPROJECT_mux_alu_src_0_0/sim/RISCVPROJECT_mux_alu_src_0_0.sv" \
+"../../../bd/RISCVPROJECT/ip/RISCVPROJECT_pc_plus4_0_0/sim/RISCVPROJECT_pc_plus4_0_0.sv" \
+"../../../bd/RISCVPROJECT/ip/RISCVPROJECT_pc_target_0_0/sim/RISCVPROJECT_pc_target_0_0.sv" \
+"../../../bd/RISCVPROJECT/ip/RISCVPROJECT_mux_pc_0_0/sim/RISCVPROJECT_mux_pc_0_0.sv" \
+"../../../bd/RISCVPROJECT/ip/RISCVPROJECT_decoder_control_0_0/sim/RISCVPROJECT_decoder_control_0_0.sv" \
+
+verilog xil_defaultlib -i "../../../../../../tools/Xilinks/2026.1/data/rsb/busdef" \
+"../../../bd/RISCVPROJECT/ip/RISCVPROJECT_xlslice_4_0/sim/RISCVPROJECT_xlslice_4_0.v" \
+"../../../bd/RISCVPROJECT/ip/RISCVPROJECT_xlslice_4_1/sim/RISCVPROJECT_xlslice_4_1.v" \
+"../../../bd/RISCVPROJECT/ip/RISCVPROJECT_xlslice_4_2/sim/RISCVPROJECT_xlslice_4_2.v" \
+
+sv xil_defaultlib -i "../../../../../../tools/Xilinks/2026.1/data/rsb/busdef" \
+"../../../bd/RISCVPROJECT/ip/RISCVPROJECT_immediate_extended_0_0/sim/RISCVPROJECT_immediate_extended_0_0.sv" \
+"../../../bd/RISCVPROJECT/ip/RISCVPROJECT_write2_0_0/sim/RISCVPROJECT_write2_0_0.sv" \
+"../../../bd/RISCVPROJECT/ip/RISCVPROJECT_mux_alu_a_0_0/sim/RISCVPROJECT_mux_alu_a_0_0.sv" \
+
+verilog xil_defaultlib -i "../../../../../../tools/Xilinks/2026.1/data/rsb/busdef" \
+"../../../bd/RISCVPROJECT/sim/RISCVPROJECT.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
