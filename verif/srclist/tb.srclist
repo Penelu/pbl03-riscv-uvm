@@ -1,0 +1,11 @@
+# Testbench, caminhos relativos a pasta verif/. A ORDEM IMPORTA (pacotes antes
+# de quem os importa). +incdir: diretorios onde os `include sao procurados.
++incdir+tb/env
++incdir+tb/tests
+tb/rv_isa_pkg.sv
+tb/interfaces/rv_ctrl_if.sv
+tb/interfaces/rv_commit_if.sv
+tb/interfaces/rv_io_if.sv
+tb/env/rv_env_pkg.sv
+tb/tests/rv_test_pkg.sv
+tb/rv_tb_top.sv
